@@ -1,0 +1,156 @@
+html{
+    background-color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+}
+
+/* body {
+    background-color: whitesmoke;
+} */
+
+.navbar {
+    background-color: #2C3539;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+.navbar div{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.navbar div span{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar div a {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.header {
+    background-color: white;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header button {
+    margin-top: 25px;
+    height: 50px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    position: relative;
+
+  display: block;
+  margin: 30px auto;
+  padding: 0;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  
+  background-color: #2ecc71;
+  color: white;
+  
+  transition: background-color .3s;
+}
+
+.header button:hover, .btn:focus {
+    background-color: #27ae60;
+  }
+  
+  .header button > * {
+    position: relative;
+  }
+  
+  .header button span {
+    display: block;
+    padding: 12px 24px;
+  }
+  
+  .header button:before {
+    content: "";
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    display: block;
+    width: 0;
+    padding-top: 0;
+      
+    border-radius: 100%;
+    
+    background-color: rgba(236, 240, 241, .3);
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .header button:active:before {
+    width: 120%;
+    padding-top: 120%;
+    
+    transition: width .2s ease-out, padding-top .2s ease-out;
+  }
+
+
+.header div {
+    font-size: 30px;
+}
+
+.header div:first-child span {
+    font-size: 42px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.header div span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about {
+    background-color: lightblue;
+    height: 650px;
+}
+
+.works {
+    background-color: white;
+    height: 650px;
+}
+
+.contact{ 
+    background-color: lightblue;
+    height: 650px;
+}
+
+.footer{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rights{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    
+}
