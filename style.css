@@ -3,9 +3,13 @@ html{
     font-family: 'Lato', sans-serif;
 }
 
-/* body {
-    background-color: whitesmoke;
-} */
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
 
 .navbar {
     background-color: #2C3539;
@@ -15,10 +19,16 @@ html{
     align-items: center;
     height: 64px;
 }
+
+#role{
+    font-weight: normal;
+    color: lightgrey;
+    font-size: 16px;
+}
 .navbar div{
     font-weight: bold;
     text-transform: uppercase;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-right: 50px;
 }
 .navbar div span{
@@ -29,6 +39,12 @@ html{
 .navbar div a {
     margin-left: 25px;
     margin-right: 25px;
+    cursor:pointer
+}
+
+.navbar div a:nth-child(3) {
+    color: grey;
+    cursor:auto
 }
 
 .header {
@@ -44,7 +60,7 @@ html{
 .header button {
     margin-top: 25px;
     height: 50px;
-    width: 150px;
+    width: 210px;
     text-transform: uppercase;
     font-weight: bold;
 
@@ -69,13 +85,13 @@ html{
 
 .header button:hover, .btn:focus {
     background-color: #27ae60;
-  }
-  
-  .header button > * {
+}
+
+.header button > * {
     position: relative;
-  }
-  
-  .header button span {
+}
+
+.header button span {
     display: block;
     padding: 12px 24px;
   }
@@ -91,7 +107,7 @@ html{
     width: 0;
     padding-top: 0;
       
-    border-radius: 100%;
+    border-radius: 50px;
     
     background-color: rgba(236, 240, 241, .3);
     
@@ -116,23 +132,74 @@ html{
 
 .header div:first-child span {
     font-size: 42px;
-    font-style: italic;
+    font-family: 'Pattaya';
+    /* font-style: italic; */
     font-weight: bold;
+    color: black;
 }
 
+#subtext{
+    font-size: 27px;
+    font-weight: normal;
+    color: gray
+}
 .header div span {
     font-size: 32px;
     font-weight: bold;
+    font-style: italic;
+    color: lightskyblue
 }
 
 .about {
     background-color: lightblue;
     height: 650px;
+    display: flex;
+    flex-direction: column;
 }
 
 .works {
     background-color: white;
     height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.group-title{
+    display: flex;
+    justify-content: center;
+    /* margin: 0; */
+    padding-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* .works:first-child {
+    display: 'block';
+} */
+
+.works p {
+    margin-left: 100px;
+}
+
+.title {
+    font-weight: bold;
+    font-family: Pattaya sans-serif;
+    font-style: italic;
+    font-size: 46px;
+}
+
+.subtitle {
+    font-weight: bold;
+    color: lightgrey;
+    font-size: 36px;
+}
+.description {
+    font-weight: bold;
+    color: lightgrey;
+    font-size: 28px;
 }
 
 .contact{ 
@@ -153,4 +220,49 @@ html{
     display: flex;
     justify-content: center;
     
+}
+
+.project-buttons{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.project-buttons button{
+    margin-right: 20px;
+}
+
+.personal-description {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.personal-description p {
+    margin-right: 50px;
+    margin-right: px;
+    font-size: 26px;
+    width: 50%;
+}
+.personal-description p span:first-child {
+    color: black;
+    font-weight: bold;
+    font-size: 46px;
+    font-family: Pattaya;
+}
+.personal-description p span:nth-child(2) {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+.personal-description p span:nth-child(3) {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+.personal-description p a {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    cursor: pointer;
+    text-decoration: underline;
 }
