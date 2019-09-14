@@ -1,70 +1,73 @@
-html{
-    background-color: whitesmoke;
-    font-family: 'Lato', sans-serif;
+html {
+  background-color: whitesmoke;
+  font-family: "Lato", sans-serif;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 p {
-    margin: 0;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
 }
 
 .navbar {
-    background-color: #2C3539;
-    color:white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 64px;
+  background-color: #2c3539;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
 }
 
-#role{
-    font-weight: normal;
-    color: lightgrey;
-    font-size: 16px;
+#role {
+  font-weight: normal;
+  color: lightgrey;
+  font-size: 16px;
 }
-.navbar div{
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-left: 30px;
-    margin-right: 50px;
+.navbar div {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-right: 50px;
 }
-.navbar div span{
-    display: flex;
-    flex-direction: column;
+.navbar div span {
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar div a {
-    margin-left: 25px;
-    margin-right: 25px;
-    cursor:pointer
+  margin-left: 25px;
+  margin-right: 25px;
+  cursor: pointer;
 }
 
 .navbar div a:nth-child(3) {
-    color: grey;
-    cursor:auto
+  color: grey;
+  cursor: auto;
 }
 
 .header {
-    background-color: white;
-    height: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+  background-color: white;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header button {
-    margin-top: 25px;
-    height: 50px;
-    width: 210px;
-    text-transform: uppercase;
-    font-weight: bold;
+  margin-top: 25px;
+  height: 50px;
+  width: 210px;
+  text-transform: uppercase;
+  font-weight: bold;
 
-    position: relative;
+  position: relative;
 
   display: block;
   margin: 30px auto;
@@ -75,105 +78,105 @@ p {
   border-width: 0;
   outline: none;
   border-radius: 2px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-  
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+
   background-color: #2ecc71;
   color: white;
-  
-  transition: background-color .3s;
+
+  transition: background-color 0.3s;
 }
 
-.header button:hover, .btn:focus {
-    background-color: #27ae60;
+.header button:hover,
+.btn:focus {
+  background-color: #27ae60;
 }
 
 .header button > * {
-    position: relative;
+  position: relative;
 }
 
 .header button span {
-    display: block;
-    padding: 12px 24px;
-  }
-  
-  .header button:before {
-    content: "";
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    
-    display: block;
-    width: 0;
-    padding-top: 0;
-      
-    border-radius: 50px;
-    
-    background-color: rgba(236, 240, 241, .3);
-    
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  
-  .header button:active:before {
-    width: 120%;
-    padding-top: 120%;
-    
-    transition: width .2s ease-out, padding-top .2s ease-out;
-  }
+  display: block;
+  padding: 12px 24px;
+}
 
+.header button:before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 0;
+  padding-top: 0;
+
+  border-radius: 50px;
+
+  background-color: rgba(236, 240, 241, 0.3);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.header button:active:before {
+  width: 120%;
+  padding-top: 120%;
+
+  transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+}
 
 .header div {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .header div:first-child span {
-    font-size: 42px;
-    font-family: 'Pattaya';
-    /* font-style: italic; */
-    font-weight: bold;
-    color: black;
+  font-size: 42px;
+  font-family: "Pattaya";
+  /* font-style: italic; */
+  font-weight: bold;
+  color: black;
 }
 
-#subtext{
-    font-size: 27px;
-    font-weight: normal;
-    color: gray
+#subtext {
+  font-size: 27px;
+  font-weight: normal;
+  color: gray;
 }
 .header div span {
-    font-size: 32px;
-    font-weight: bold;
-    font-style: italic;
-    color: lightskyblue
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  color: lightskyblue;
 }
 
 .about {
-    background-color: lightblue;
-    height: 650px;
-    display: flex;
-    flex-direction: column;
+  background-color: lightblue;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
 }
 
 .works {
-    background-color: white;
-    height: 650px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: white;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.group-title{
-    display: flex;
-    justify-content: center;
-    /* margin: 0; */
-    padding-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 0;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
+.group-title {
+  display: flex;
+  justify-content: center;
+  /* margin: 0; */
+  padding-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* .works:first-child {
@@ -181,88 +184,142 @@ p {
 } */
 
 .works p {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 .title {
-    font-weight: bold;
-    font-family: Pattaya sans-serif;
-    font-style: italic;
-    font-size: 46px;
+  font-weight: bold;
+  font-family: Pattaya sans-serif;
+  font-style: italic;
+  font-size: 46px;
 }
 
 .subtitle {
-    font-weight: bold;
-    color: lightgrey;
-    font-size: 36px;
+  font-weight: bold;
+  color: lightgrey;
+  font-size: 36px;
 }
 .description {
-    font-weight: bold;
-    color: lightgrey;
-    font-size: 28px;
+  font-weight: bold;
+  color: lightgrey;
+  font-size: 28px;
 }
 
-.contact{ 
-    background-color: lightblue;
-    height: 650px;
+.contact {
+  background-color: lightblue;
+  height: 650px;
 }
 
-.footer{
-    background-color: white;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer {
+  background-color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.rights{
-    background-color: lightblue;
-    display: flex;
-    justify-content: center;
-    
+.footer i {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.project-buttons{
-    margin-top: 20px;
-    margin-left: 100px;
+.rights {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
 }
 
-.project-buttons button{
-    margin-right: 20px;
+.project-buttons {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.project-buttons button {
+  margin-right: 20px;
 }
 
 .personal-description {
-    display: flex;
-    justify-content: flex-end;
-    color: white;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
 }
 
 .personal-description p {
-    margin-right: 50px;
-    margin-right: px;
-    font-size: 26px;
-    width: 50%;
+  margin-right: 50px;
+  margin-right: px;
+  font-size: 26px;
+  width: 50%;
 }
 .personal-description p span:first-child {
-    color: black;
-    font-weight: bold;
-    font-size: 46px;
-    font-family: Pattaya;
+  color: black;
+  font-weight: bold;
+  font-size: 46px;
+  font-family: Pattaya;
 }
 .personal-description p span:nth-child(2) {
-    color: white;
-    font-weight: bold;
-    font-size: 36px;
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
 }
 .personal-description p span:nth-child(3) {
-    color: white;
-    font-weight: bold;
-    font-size: 32px;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
 }
 .personal-description p a {
-    color: white;
-    font-weight: bold;
-    font-size: 32px;
-    cursor: pointer;
-    text-decoration: underline;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  cursor: pointer;
+  text-decoration: underline;
 }
+
+.form-header {
+  display: flex;
+  justify-content: center;
+}
+.form-header div {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.form-header div input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 378px;
+}
+
+.form-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form-body div {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-body div textarea {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 800px;
+}
+.submitButton {
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+}
+
+.codeButton {
+    width: 200px;
+    height: 50px;
+}
+
