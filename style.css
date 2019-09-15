@@ -158,14 +158,14 @@ h2 {
 
 .about {
   background-color: white;
-  height: 650px;
+  height: 760px;
   display: flex;
   flex-direction: column;
 }
 
 .works {
   background-color: white;
-  height: 650px;
+  height: 760px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,6 +250,10 @@ h2 {
   color: gray;
 }
 
+.personal-description img {
+  margin-right: 100px;
+}
+
 .personal-description p {
   margin-right: 50px;
   margin-right: px;
@@ -259,15 +263,24 @@ h2 {
 
 .work-description {
   display: flex;
+  align-items: center;
+}
+.work-description img {
+  margin-right: 70px;
+}
+
+.work-description div {
+  display: flex;
   align-items: flex-start;
+  /* justify-content: space-between; */
   flex-direction: column;
 }
 
-.work-description p {
-  margin-right: 50px;
-  margin-right: px;
+.work-description div p {
+  margin-right: 100px;
+  /* margin-right: 50px; */
   font-size: 26px;
-  width: 50%;
+  width: 70%;
   color: gray;
 }
 .work-description p span:first-child {
