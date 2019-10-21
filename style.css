@@ -15,6 +15,12 @@ h2 {
   margin: 0;
 }
 
+hr {
+  margin: 0px;
+}
+
+/* NAVBAR */
+
 .navbar {
   background-color: #2c3539;
   color: white;
@@ -22,61 +28,266 @@ h2 {
   justify-content: space-between;
   align-items: center;
   height: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-#role {
+.navbar-content {
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+.occupation {
+  display: flex;
+  flex-direction: column;
   font-weight: normal;
   color: lightgrey;
   font-size: 16px;
 }
-.navbar div {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-left: 30px;
-  margin-right: 50px;
-}
-.navbar div span {
-  display: flex;
-  flex-direction: column;
-}
 
-.navbar div a {
+.navbar-link {
   margin-left: 25px;
   margin-right: 25px;
   cursor: pointer;
 }
 
-.navbar div a:nth-child(3) {
+.disabled {
   color: grey;
-  cursor: auto;
+  cursor: auto !important;
 }
 
+/* HEADER */
+
 .header {
-  /* background-color: white; */
   background-image: url("https://images.unsplash.com/photo-1443694910004-3567042689f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80");
   background-position-y: -510px;
-  height: 650px;
+  height: 657px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.header-black-text {
+  font-size: 30px;
+}
+
+.header-white-text {
+  font-size: 27px;
+  font-weight: normal;
+  color: lightgray;
+}
+
+/* ABOUT */
+
+.about {
+  background-color: white;
+  height: 760px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+  justify-content: flex-end;
+  color: gray;
+}
+
+.personal-photo {
+  margin-right: 100px;
+}
+
+.personal-description {
+  margin-right: 50px;
+  margin-right: px;
+  font-size: 26px;
+  width: 50%;
+}
+
+.larger-text {
+  color: darkslategray;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.larger-text-2 {
+  color: darkslategray;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.about-link {
+  color: gray;
+  font-weight: bold;
+  font-size: 32px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* WORKS */
+
+.works {
+  background-color: white;
+  height: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.works-content {
+  display: flex;
+  align-items: center;
+}
+
+.works-title {
+  font-weight: bold;
+  font-family: 'Pattaya';
+  font-style: italic;
+  font-size: 52px;
+  color:rgb(44, 14, 89);
+}
+
+.works-subtitle {
+  font-weight: bold;
+  color: darkslategray;
+  font-size: 36px;
+}
+
+.works-description {
+  margin-left: 100px;
+  /* font-weight: bold; */
+  color: gray;
+  width: 80%;
+  font-size: 26px;
+}
+
+.works-photo {
+  margin-right: 70px;
+}
+
+.project-buttons {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.project-buttons button {
+  margin-right: 20px;
+}
+
+.codeButton {
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+}
+
+/* CONTACT */
+.contact {
+  background-color: #2c3539;
+  height: 650px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: center;
+}
+.form-header div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.form-header div input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 378px;
+  font-size: 26px;
+}
+
+.form-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.form-body div {
+    color: white;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-body div textarea {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 800px;
+  }
+  .submitButton {
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+  }
+  
+  .contact h2 {
+    color:white;
+  }
+  
+  textarea {
+    resize: none;
+    font-size: 26px;
+  }
+  
+  /* FOOTER */
+  .footer {
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer i {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  i {
+    color: #2c3539;
+}
+
+/* RIGHTS */
+.rights {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+/* BUTTONS */
 .btn {
   margin-top: 25px;
   height: 50px;
   width: 210px;
   text-transform: uppercase;
   font-weight: bold;
-
+  
   position: relative;
-
+  
   display: block;
-  margin: 30px auto;
+  /* margin: 30px auto; */
   padding: 0;
-
+  
   overflow: hidden;
-
+  
   border-width: 0;
   outline: none;
   border-radius: 2px;
@@ -84,7 +295,7 @@ h2 {
   
   color: white;
   background-color: rgb(44, 14, 89);
-
+  
   transition: background-color 0.3s;
 }
 
@@ -104,19 +315,19 @@ h2 {
 
 .btn:before {
   content: "";
-
+  
   position: absolute;
   top: 50%;
   left: 50%;
-
+  
   display: block;
   width: 0;
   padding-top: 0;
-
+  
   border-radius: 50px;
-
+  
   background-color: rgba(236, 240, 241, 0.3);
-
+  
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -127,53 +338,30 @@ h2 {
 .btn:active:before {
   width: 120%;
   padding-top: 120%;
-
+  
   transition: width 0.2s ease-out, padding-top 0.2s ease-out;
 }
 
-.header div {
-  font-size: 30px;
-  /* font-weight: bold; */
-}
+/* MISC */
 
-.header div:first-child span {
+.decorated-text-name {
   font-size: 42px;
   font-family: "Pattaya";
-  /* font-style: italic; */
+  font-style: italic;
   font-weight: bold;
   color:rgb(44, 14, 89);
 }
 
-#subtext {
-  font-size: 27px;
-  font-weight: normal;
-  color: lightgray;
-}
-.header div span {
+.decorated-text-technology {
   font-size: 32px;
   font-weight: bold;
   font-style: italic;
   color: lightskyblue;
 }
 
-.about {
-  background-color: white;
-  height: 760px;
-  display: flex;
-  flex-direction: column;
-}
-
-.works {
-  background-color: white;
-  height: 760px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.group-title {
+.category {
   display: flex;
   justify-content: center;
-  /* margin: 0; */
   padding-top: 50px;
   margin-bottom: 50px;
   margin-left: 0;
@@ -182,204 +370,11 @@ h2 {
   font-weight: bold;
 }
 
-/* .works:first-child {
-    display: 'block';
-} */
-
-.works p {
-  margin-left: 100px;
+.hidden {
+display: none;
 }
 
-.title {
-  font-weight: bold;
-  font-family: Pattaya sans-serif;
-  font-style: italic;
-  font-size: 46px;
-}
 
-.subtitle {
-  font-weight: bold;
-  color: lightgrey;
-  font-size: 36px;
-}
-.description {
-  font-weight: bold;
-  color: lightgrey;
-  font-size: 28px;
-}
 
-.contact {
-  background-color: #2c3539;
-  height: 650px;
-}
 
-.footer {
-  background-color: white;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.footer i {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.rights {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-weight: bold;
-}
-
-.project-buttons {
-  margin-top: 20px;
-  margin-left: 100px;
-}
-
-.project-buttons button {
-  margin-right: 20px;
-}
-
-.personal-description {
-  display: flex;
-  justify-content: flex-end;
-  color: gray;
-}
-
-.personal-description img {
-  margin-right: 100px;
-}
-
-.personal-description p {
-  margin-right: 50px;
-  margin-right: px;
-  font-size: 26px;
-  width: 50%;
-}
-
-.work-description {
-  display: flex;
-  align-items: center;
-}
-.work-description img {
-  margin-right: 70px;
-}
-
-.work-description div {
-  display: flex;
-  align-items: flex-start;
-  /* justify-content: space-between; */
-  flex-direction: column;
-}
-
-.work-description div p {
-  margin-right: 100px;
-  /* margin-right: 50px; */
-  font-size: 26px;
-  width: 70%;
-  color: gray;
-}
-.work-description p span:first-child {
-  color: black;
-  font-weight: bold;
-  font-size: 46px;
-  font-family: Pattaya;
-}
-.work-description p span:nth-child(2) {
-  color: darkslategray;
-  font-weight: bold;
-  font-size: 36px;
-}
-
-.personal-description p span:first-child {
-  color: rgb(44, 14, 89);
-  font-weight: bold;
-  font-size: 46px;
-  font-family: Pattaya;
-}
-.personal-description p span:nth-child(2) {
-  color: darkslategray;
-  font-weight: bold;
-  font-size: 36px;
-}
-.personal-description p span:nth-child(3) {
-  color: darkslategray;
-  font-weight: bold;
-  font-size: 32px;
-}
-.personal-description p a {
-  color: gray;
-  font-weight: bold;
-  font-size: 32px;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.form-header {
-  display: flex;
-  justify-content: center;
-}
-.form-header div {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-size: 22px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.form-header div input {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 40px;
-    width: 378px;
-}
-
-.form-body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.form-body div {
-  color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-}
-
-.form-body div textarea {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    height: 200px;
-    width: 800px;
-}
-.submitButton {
-    margin-top: 50px;
-    width: 200px;
-    height: 50px;
-}
-
-.codeButton {
-  margin-left: 100px;
-  margin-top: 20px;
-    width: 200px;
-    height: 50px;
-}
-
-hr {
-  margin: 0px;
-}
-
-i {
-  color: #2c3539;
-}
-
-.contact h2 {
-  color:white;
-}

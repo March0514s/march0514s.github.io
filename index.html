@@ -9,113 +9,139 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Pattaya&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ea59ed788b.js"></script>
   </head>
+  
   <body>
+    <!-- NAVBAR -->
     <div class="navbar">
-      <div>
-        <span>Marcus Davanço<span> 
-        <span id="role">Frontend Developer</span>
+      <div class="navbar-content">
+        <p>
+          Marcus Davanço 
+          <span class="occupation">
+            Frontend Developer
+          </span>
+        </p>
       </div>
       <div>
-          <a>About</a>
-          <a>Works</a>
-          <a>Lab</a>
-          <a>Contact</a>
+          <a class="navbar-link">About</a>
+          <a class="navbar-link">Works</a>
+          <a class="navbar-link disabled">Lab</a>
+          <a class="navbar-link">Contact</a>
       </div>
     </div>
+
+    <!-- HEADER -->
     <div class="header">
-      <div>Hi, I'm
-      <span><span>March!</span></span></div><div>
-      Webdeveloper living in São Paulo, Brazil
-      </div> 
-      <div id="subtext">I make web applications, usually with <span>React</span></div>
+      <p>
+      </p>
+      <p>
+      <span class="header-black-text">Hi, I'm <span class="decorated-text-name">March!</span>, a webdeveloper living in São Paulo, Brazil</span>
+      </p>
+      <p>
+        <span class="header-white-text">I make web applications, usually with <span class="decorated-text-technology">React</span></span>
+      </p>
       <button class="btn" type="button">i have a project...</button>
     </div>
+    
+    <!-- ABOUT -->
     <div class="about">
-        <p class="group-title">
+        <p class="category">
             About
-            
         </p>
-          <div class='personal-description'>
-            <img src='https://via.placeholder.com/500x600'></img>
-            <p>
-              I'm <span><em>March!</em></span>, 
-              <span>a Frontend web developer from São Paulo, Brazil.</span> 
+          <div class="about-content">
+            <img class='personal-photo' src='https://via.placeholder.com/500x600'></img>
+            <p class="personal-description">
+              I'm <span class="decorated-text-name">March!</span>, 
+              <span class="larger-text">a Frontend web developer from São Paulo, Brazil.</span> 
               After a long adventure through the dark realms of accountacy, taxing 
               and bureaucracy I've decided to change my career so that I could put 
               my programming skills to use and scratch that creative itch that 
               was somehow left unatended for a huge period of my life. I'm 
               currently focusing my efforts into making the web a better and more 
-              beautiful place through the usage of technologies like <span>HTML5, CSS3, 
+              beautiful place through the usage of technologies like <span class="larger-text-2">HTML5, CSS3, 
               Javascript and React</span>. If you're somehow interested in my work, 
               projects or simply have similar ideas and would like to discuss them,
-              please <a>drop me a line</a>.
+              please <a class="about-link">drop me a line</a>.
             </p>  
           </div>
     </div>
-      <div class="works">
-          <p class="group-title">
-              Featured Works
+
+    <!-- WORKS -->
+    <div class="works">
+      <p class="category">
+        Featured Projects
+      </p>
+      <div class='works-content'>
+        <div>  
+          <p class='works-description'>
+            <span class="works-title">Librarian</span>, <span 
+            class="works-subtitle">a personal finance app.</span> Born 
+            from a necessity of keeping track of expenses in a simple 
+            way, it was designed as a solution for personal budgeting 
+            using React, Material-UI and Firebase.
           </p>
-            <div class='work-description'>
-              <div>  
-              <p>
-                <span><em>Librarian</em></span>, 
-                <span>a personal finance app.</span> 
-                Born from a necessity of keeping track of expenses in a simple way, it was designed as a solution for personal budgeting using React, Material-UI and Firebase.
-              </p>
-              <button class='codeButton btn'>
-                Show me the code...
-              </button>
-            </div>
-              <img src='https://via.placeholder.com/700x500'></img>  
-            </div>
-                  <!-- <div class="text">
-            <p class="title">Filehost</p>
-            <p class="subtitle">A filehost client.</p>
-            <p class="description">A simple filehost developed with React and Bulma.</p>
-            <div class="project-buttons">
-                <button>Read more</button>
-                <button>Show me the code...</button>
-              </div>
-          </div>
-          <div class="text">
-            <p class="title">Zoyo Viewer</p>
-            <p class="subtitle">An image viewer for divOS.</p>
-            <p class="description">Inspired in ElementaryOS' beautiful design, Zoyo is a simple image viewer that was developed with React and Photonkit for divOS.</p>
-            <div class="project-buttons">
-                <button>Read more</button>
-                <button>Show me the code...</button>
-              </div>
-          </div> -->
+          <button onclick="window.open('https://github.com/March0514s/librarian', '_blank')" class='codeButton btn'>
+            Show me the code...
+          </button>
+        </div>
+              <img class="works-photo" src='https://via.placeholder.com/700x500'></img>
+      </div>
+      <div class='works-content hidden'>
+        <div>  
+          <p class='works-description'>
+            <span class="works-title">Filehost</span>, <span 
+            class="works-subtitle">A filehost client.</span> 
+            A simple filehost developed with React and Bulma.
+          </p>
+          <button onclick="window.open('https://github.com/March0514s/filehost', '_blank')" class='codeButton btn'>
+            Show me the code...
+          </button>
+        </div>
+        <img class="works-photo" src='https://via.placeholder.com/700x500'></img>
+      </div>
+      <div class='works-content hidden'>
+        <div>  
+          <p class='works-description'>
+            <span class="works-title">Zoyo Viewer</span>, <span 
+            class="works-subtitle">An image viewer for divOS.</span> 
+            Inspired in ElementaryOS' beautiful design, Zoyo is a 
+            simple image viewer that was developed with React and
+            Photonkit for divOS.
+          </p>
+          <button onclick="window.open('https://github.com/March0514s/zoyo-viewer', '_blank')" class='codeButton btn'>
+            Show me the code...
+          </button>
+        </div>
+        <img class="works-photo" src='https://via.placeholder.com/700x500'></img>
       </div>
     </div>
+
+    <!-- CONTACT -->
     <div class="contact">
-        <h2 class="group-title">
-            Contact
-          </h2>
+      <h2 class="category">
+        Contact
+      </h2>
       <form>
         <div class='form-header'>
-        <div>
-          Name
-          <input type='text' name='name'>
-        </div>
-        <div>
-          Email
-          <input type='text' name='email'>
-        </div>
-      </div>
-      <div class='form-body'>
-        <div>
           <div>
-          Message
-          <textarea></textarea>
+            <label>Name</label>
+            <input type='text'>
+          </div>
+          <div>
+            <label>Email</label>
+            <input type='text'>
           </div>
         </div>
-        <input class="submitButton btn" type="submit" value="SUBMIT"/>
-      </div>
-
+        <div class='form-body'>
+          <div>
+            <label>Message</label>
+            <textarea type='text'></textarea>
+          </div>
+          <input class="submitButton btn" type="submit" value="send"/>
+        </div>
       </form>
     </div>
+
+    <!-- FOOTER -->
     <div class="footer">
       <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/marcus-davan%C3%A7o-a9940018a/">
         <i class="fab fa-linkedin fa-2x"></i>
@@ -126,11 +152,15 @@
       <a target="_blank" rel="noopener noreferrer" href="https://github.com/March0514s" >
         <i class="fab fa-github-square fa-2x"></i>
       </a>
-
     </div>
+
     <hr/>
+
+    <!-- RIGHTS -->
     <div class="rights">
       © 2019 Marcus Davanço. All rights reserved
     </div>
+
   </body>
+
 </html>
